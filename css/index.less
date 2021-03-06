@@ -1,0 +1,93 @@
+@import "common.css";
+body{
+    min-height: 300px;
+    width: 15rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial,Helvetica;
+    background-color: #F2F2F2;
+}
+@num:50;
+.search-con{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFC001;
+    width: 15rem;
+    height: (88rem / @num);
+    .bt1{
+        margin: (11rem / @num) (25rem / @num) (7rem / @num) (24rem / @num);
+        height: (70rem / @num);
+        width: (44rem / @num);
+        background: url("../images/classify.png") no-repeat;
+        background-size: 100%;
+    }
+    .search{
+        flex: 1;
+        input{
+            outline: none;
+            height: (66rem / @num);
+            border-radius: (33rem / @num);
+            border: 0;
+            width: 100%;
+            background-color: #FFF2cc;
+            margin: (10rem / @num) (-0.5rem / @num);
+            font-size: (25rem / @num);
+            padding-left:(55rem / @num);
+            color: #757575;
+        }
+    }
+    .bt2{
+        margin: (8rem / @num) (10rem / @num);
+        height: (75rem / @num);
+        width: (70rem / @num);
+        text-align: center;
+        line-height:(75rem / @num);
+        font-size: (25rem / @num);
+        color: #f2f2f2;
+    }
+
+}
+.banner{
+    width: (750rem / @num);
+    height: (368rem / @num);
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.ad{
+    display: flex;
+    a{
+        flex: 1;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+}
+.nav{
+    width: 15rem;
+    a{
+        float: left;
+        margin-top:  (10rem / @num);
+        width: (150rem / @num);
+        height: (140rem / @num);
+        text-align: center;
+        img{
+            display: block;
+            width: (82rem / @num);
+            height: (82rem / @num);
+            margin: (10rem / @num) auto 0;
+        }
+        span{
+            display: block;
+            font-size: (25rem / @num);
+            color:  #333333;
+            margin-top: (0rem / @num);
+        }
+    }
+}
